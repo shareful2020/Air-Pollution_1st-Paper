@@ -1,0 +1,72 @@
+================================================================================
+MGWR Version: 2.2.1
+Released on: 03/20/2020
+Source code is available at: https://github.com/pysal/mgwr
+Development Team: Ziqi Li, Taylor Oshan, Stewart Fotheringham, Wei Kang, 
+Levi Wolf, Hanchen Yu, Mehak Sachdeva, and Sarah Bardin
+Spatial Analysis Research Center (SPARC)
+Arizona State University, Tempe, USA
+================================================================================
+Model type:                                                             Gaussian
+Number of observations:                                                       86
+Number of covariates:                                                          5
+Dependent variable:                                                   COVID_Infe
+Variable standardization:                                                     On
+Total runtime:                                                           0:00:00
+
+Global Regression Results
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                  61.349
+Log-likelihood:                                                         -107.505
+AIC:                                                                     225.010
+AICc:                                                                    228.073
+R2:                                                                        0.287
+Adj. R2:                                                                   0.251
+
+Variable                                   Est.         SE  t(Est/SE)    p-value
+------------------------------------ ---------- ---------- ---------- ----------
+DEM                                       0.361      0.105      3.428      0.001
+Wind_speed                                0.212      0.102      2.077      0.038
+Rainfall_f                                0.439      0.163      2.693      0.007
+LST                                       0.236      0.126      1.883      0.040
+WP                                       -0.260      0.162     -1.604      0.109
+
+Geographically Weighted Regression (GWR) Results
+--------------------------------------------------------------------------------
+Coordinates type:                                                      Projected
+Spatial kernel:                                                Adaptive bisquare
+Criterion for optimal bandwidth:                                            AICc
+Bandwidth used:                                                           85.000
+
+Diagnostic Information
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                  58.189
+Effective number of parameters (trace(S)):                                 8.780
+Degree of freedom (n - trace(S)):                                         77.220
+Sigma estimate:                                                            0.868
+Log-likelihood:                                                         -105.231
+Degree of Dependency (DoD):                                                0.873
+AIC:                                                                     230.021
+AICc:                                                                    232.824
+BIC:                                                                     254.024
+R2:                                                                        0.733
+Adj. R2:                                                                   0.245
+Adj. alpha (95%):                                                          0.028
+Adj. critical t value (95%):                                               2.229
+
+Summary Statistics For GWR Parameter Estimates
+--------------------------------------------------------------------------------
+Variable                        Mean        STD        Min     Median        Max
+--------------------      ---------- ---------- ---------- ---------- ----------
+DEM                            0.333      0.042      0.278      0.342      0.388
+Wind_speed                     0.217      0.023      0.167      0.220      0.261
+Rainfall_f                     0.510      0.052      0.371      0.523      0.574
+LST                            0.266      0.039      0.199      0.269      0.377
+WP                            -0.303      0.134     -0.522     -0.306     -0.108
+================================================================================
+Acknowledgement:
+We acknowledge the support of the National Science Foundation under Award 1758786 
+from the Geography and Spatial Sciences Program to A. S. Fotheringham which 
+enabled this software to be written and made freely available.
+================================================================================
+

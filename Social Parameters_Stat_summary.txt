@@ -1,0 +1,72 @@
+================================================================================
+MGWR Version: 2.2.1
+Released on: 03/20/2020
+Source code is available at: https://github.com/pysal/mgwr
+Development Team: Ziqi Li, Taylor Oshan, Stewart Fotheringham, Wei Kang, 
+Levi Wolf, Hanchen Yu, Mehak Sachdeva, and Sarah Bardin
+Spatial Analysis Research Center (SPARC)
+Arizona State University, Tempe, USA
+================================================================================
+Model type:                                                             Gaussian
+Number of observations:                                                       86
+Number of covariates:                                                          5
+Dependent variable:                                                   COVID_Infe
+Variable standardization:                                                     On
+Total runtime:                                                           0:00:00
+
+Global Regression Results
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                  60.007
+Log-likelihood:                                                         -106.553
+AIC:                                                                     223.107
+AICc:                                                                    226.170
+R2:                                                                        0.302
+Adj. R2:                                                                   0.268
+
+Variable                                   Est.         SE  t(Est/SE)    p-value
+------------------------------------ ---------- ---------- ---------- ----------
+Pop_Densit                                0.318      0.116      2.738      0.006
+Poverty_Li                               -0.283      0.119     -2.382      0.017
+Brick_Den                                 0.212      0.095      2.233      0.026
+Literacy                                  0.047      0.098      0.481      0.630
+Land_use                                  0.165      0.104      1.591      0.112
+
+Geographically Weighted Regression (GWR) Results
+--------------------------------------------------------------------------------
+Coordinates type:                                                      Projected
+Spatial kernel:                                                Adaptive bisquare
+Criterion for optimal bandwidth:                                            AICc
+Bandwidth used:                                                           85.000
+
+Diagnostic Information
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                  55.864
+Effective number of parameters (trace(S)):                                 9.675
+Degree of freedom (n - trace(S)):                                         76.325
+Sigma estimate:                                                            0.856
+Log-likelihood:                                                         -103.477
+Degree of Dependency (DoD):                                                0.851
+AIC:                                                                     228.304
+AICc:                                                                    231.657
+BIC:                                                                     254.503
+R2:                                                                        0.702
+Adj. R2:                                                                   0.267
+Adj. alpha (95%):                                                          0.026
+Adj. critical t value (95%):                                               2.268
+
+Summary Statistics For GWR Parameter Estimates
+--------------------------------------------------------------------------------
+Variable                        Mean        STD        Min     Median        Max
+--------------------      ---------- ---------- ---------- ---------- ----------
+Pop_Densit                     0.305      0.030      0.239      0.304      0.391
+Poverty_Li                    -0.307      0.030     -0.373     -0.303     -0.256
+Brick_Den                      0.217      0.024      0.156      0.223      0.251
+Literacy                      -0.005      0.090     -0.160     -0.004      0.121
+Land_use                       0.139      0.045      0.075      0.134      0.223
+================================================================================
+Acknowledgement:
+We acknowledge the support of the National Science Foundation under Award 1758786 
+from the Geography and Spatial Sciences Program to A. S. Fotheringham which 
+enabled this software to be written and made freely available.
+================================================================================
+

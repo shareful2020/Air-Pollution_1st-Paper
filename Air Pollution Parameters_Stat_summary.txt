@@ -1,0 +1,76 @@
+================================================================================
+MGWR Version: 2.2.1
+Released on: 03/20/2020
+Source code is available at: https://github.com/pysal/mgwr
+Development Team: Ziqi Li, Taylor Oshan, Stewart Fotheringham, Wei Kang, 
+Levi Wolf, Hanchen Yu, Mehak Sachdeva, and Sarah Bardin
+Spatial Analysis Research Center (SPARC)
+Arizona State University, Tempe, USA
+================================================================================
+Model type:                                                             Gaussian
+Number of observations:                                                       86
+Number of covariates:                                                          7
+Dependent variable:                                                   COVID_Infe
+Variable standardization:                                                     On
+Total runtime:                                                           0:00:00
+
+Global Regression Results
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                  53.325
+Log-likelihood:                                                         -101.477
+AIC:                                                                     216.954
+AICc:                                                                    220.824
+R2:                                                                        0.380
+Adj. R2:                                                                   0.333
+
+Variable                                   Est.      SE      t(Est/SE)    p-value
+------------------------------------ ---------- ---------- ---------- ----------
+PM_16                                     0.645      0.295      2.187      0.029
+NO_17                                     0.112      0.305      0.368      0.713
+O3_final                                  2.257      0.556      4.059      0.000
+AOT_16                                    0.816      0.322      2.531      0.011
+SO2_Final                                 0.200      0.416      0.481      0.630
+CO_17                                    -0.562      0.296     -1.900      0.057
+WV_Final                                 -3.043      0.784     -3.881      0.000
+
+Geographically Weighted Regression (GWR) Results
+--------------------------------------------------------------------------------
+Coordinates type:                                                      Projected
+Spatial kernel:                                                Adaptive bisquare
+Criterion for optimal bandwidth:                                            AICc
+Bandwidth used:                                                           85.000
+
+Diagnostic Information
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                  48.394
+Effective number of parameters (trace(S)):                                11.996
+Degree of freedom (n - trace(S)):                                         74.004
+Sigma estimate:                                                            0.809
+Log-likelihood:                                                          -97.305
+Degree of Dependency (DoD):                                                0.879
+AIC:                                                                     220.602
+AICc:                                                                    225.655
+BIC:                                                                     252.499
+R2:                                                                        0.842
+Adj. R2:                                                                   0.345
+Adj. alpha (95%):                                                          0.029
+Adj. critical t value (95%):                                               2.219
+
+Summary Statistics For GWR Parameter Estimates
+--------------------------------------------------------------------------------
+Variable                        Mean        STD        Min     Median        Max
+--------------------      ---------- ---------- ---------- ---------- ----------
+PM_16                          0.601      0.177      0.279      0.662      0.954
+NO_17                         -0.117      0.352     -0.547     -0.119      0.362
+O3_final                       2.209      0.526      1.313      2.549      2.730
+AOT_16                         0.827      0.193      0.488      0.937      1.126
+SO2_Final                      0.252      0.289     -0.280      0.214      0.736
+CO_17                         -0.633      0.285     -1.106     -0.664     -0.246
+WV_Final                      -2.846      0.858     -3.777     -3.234     -1.461
+================================================================================
+Acknowledgement:
+We acknowledge the support of the National Science Foundation under Award 1758786 
+from the Geography and Spatial Sciences Program to A. S. Fotheringham which 
+enabled this software to be written and made freely available.
+================================================================================
+
